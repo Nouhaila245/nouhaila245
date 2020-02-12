@@ -1,7 +1,7 @@
 package com.gestionimpot.service.facade;
 
-import com.livre.stockempruntlivre.bean.Emprunt;
+import com.gestionimpot.bean.Societe;
 
 public interface SocieteService {
-	public int save();
+	public int save(Societe societe);
 }

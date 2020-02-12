@@ -3,11 +3,16 @@ package com.gestionimpot.bean;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+
 @Entity
 public class TauxDeclarationIS {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	@ManyToOne
 	private DeclarationIS declarationIS;
 	private Date dateDebut;
