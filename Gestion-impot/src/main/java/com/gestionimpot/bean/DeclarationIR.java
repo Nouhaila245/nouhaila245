@@ -4,8 +4,8 @@ import javax.persistence.*;
 
 
 @Entity
-@DiscriminatorValue( value="IR" )
-public class DeclarationIR extends DeclarationTva {
+
+public class DeclarationIR   {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;

@@ -5,10 +5,7 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table
-@Inheritance( strategy = InheritanceType.SINGLE_TABLE )
 
-@DiscriminatorColumn( name = "type" )
 public class DeclarationTva {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

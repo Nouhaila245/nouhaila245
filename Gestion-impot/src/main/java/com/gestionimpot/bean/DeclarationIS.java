@@ -3,9 +3,8 @@ package com.gestionimpot.bean;
 import javax.persistence.*;
 
 @Entity
-@DiscriminatorValue( value="IS" )
 
-public class DeclarationIS  extends  DeclarationTva{
+public class DeclarationIS  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;

@@ -9,7 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class TauxDeclarationIS {
+
+public class TauxDeclarationIS  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
