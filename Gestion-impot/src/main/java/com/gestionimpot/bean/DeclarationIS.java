@@ -1,14 +1,11 @@
 package com.gestionimpot.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-
+import javax.persistence.*;
 
 @Entity
-public class DeclarationIS {
+@DiscriminatorValue( value="IS" )
+
+public class DeclarationIS  extends  DeclarationTva{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
